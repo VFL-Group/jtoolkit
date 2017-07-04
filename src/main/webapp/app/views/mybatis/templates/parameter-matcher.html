@@ -1,0 +1,28 @@
+<div class="col-md-3">
+  <div ng-include="'views/mybatis/templates/sidebar.html'"></div>
+</div>
+<div class="col-md-9" ng-init="vm.init()">
+  <h3 class="page-header">Parameter Matcher</h3>
+  <form name="form" class="form-check" ng-submit="vm.matchParameters(form.$valid)" novalidate>
+    <div class="form-group">
+      <label>Prepared SQL</label>
+      <textarea id="sql" class="form-control" rows="6" name="preparedSql" ng-model="vm.preparedSql" required
+            placeholder="SELECT * FROM USER WHERE USER_ID = ?"></textarea>
+      <p class="alert alert-danger" ng-show="form.$submitted && form.preparedSql.$error.required">Prepared SQL is required</p>
+    </div>
+    <div class="form-group">
+      <label>Parameters</label>
+      <textarea id="param" class="form-control" rows="3" name="parameters" ng-model="vm.parameters" required
+            placeholder="100(Integer)"></textarea>
+      <p class="alert alert-danger" ng-show="form.$submitted && form.parameters.$error.required">Parameter(s) is required</p>
+    </div>
+    <button type="button" class="btn btn-danger" ng-click="vm.clearAll()">Clear All</button>
+    <button type="submit" class="btn btn-primary">Match Parameters</button>
+    <button id="copy" type="button" class="btn btn-success" data-clipboard-action="copy" data-clipboard-target="#code">Copy SQL</button>
+  </form>
+  <br>
+  <div ng-show="vm.matchedSql != ''">
+    <label>SQL</label>
+    <pre id="code" style="font-size: 14px;">{{vm.matchedSql}}</pre>
+  </div>
+</div>

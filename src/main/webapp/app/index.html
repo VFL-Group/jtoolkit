@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>jToolkit for Developer</title>
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+  <link id="main-css-fixed" rel="stylesheet" href="css/core/main.css">
+</head>
+<body>
+  <div ng-include="'views/main/templates/navbar.html'"></div>
+  <div class="container-fluid">
+    <div class="row" ng-view></div>
+    <div class="page-footer">
+      <h5>Copyright &copy;2017 KingAriel, All Rights Reserved.</h5>
+    </div>
+  </div>
+  <div ng-include="'views/main/templates/loading.html'"></div>
+  <script data-main="main" src="lib/require/require.js"></script>
+</body>
+</html>

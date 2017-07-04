@@ -1,0 +1,60 @@
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-success {
+  color: #fff;
+  background-color: #5cb85c;
+}
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+/**
+ * ngDialog-width
+ */
+.ngdialog.ngdialog-theme-default.ngdialog-width-500 .ngdialog-content {
+  width: 100% !important;
+  max-width: 500px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-550 .ngdialog-content {
+  width: 100% !important;
+  max-width: 550px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-600 .ngdialog-content {
+  width: 100% !important;
+  max-width: 600px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-650 .ngdialog-content {
+  width: 100% !important;
+  max-width: 650px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-700 .ngdialog-content {
+  width: 100% !important;
+  max-width: 700px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-750 .ngdialog-content {
+  width: 100% !important;
+  max-width: 750px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-width-800 .ngdialog-content {
+  width: 100% !important;
+  max-width: 800px;
+}
+
+/**
+ * ngDialog-padding
+ */
+.ngdialog.ngdialog-theme-default.ngdialog-padding-70 {
+	padding-bottom: 70px;
+    padding-top: 70px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-padding-80 {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-padding-90 {
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+.ngdialog.ngdialog-theme-default.ngdialog-padding-100 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
